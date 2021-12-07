@@ -4,6 +4,6 @@ public class Test {
 
 	
 	int chiffre; 
-	int nombre; 
+	int nom; 
 	
 }
