@@ -1,5 +1,7 @@
+package fr.eni.enchere.bo;
+import java.time.LocalDateTime;
 
-	public class Article {
+public class Article {
 
 	
 		private int idArticle;
@@ -10,13 +12,13 @@
 		private String description;
 
 		
-		private Date dateDebutEnchere;
+		private LocalDateTime dateDebutEnchere;
 
 	
-		private Date dateFinEnchere;
+		private LocalDateTime dateFinEnchere;
 
 		
-		private int MiseAprix;
+		private int miseAPrix;
 
 		
 		private int prixVente;
@@ -61,32 +63,32 @@
 			this.description = description;
 		}
 
-		public Date getDateDebutEnchere() {
+		public LocalDateTime getDateDebutEnchere() {
 			return dateDebutEnchere;
 		}
 
 		
-		public void setDateDebutEnchere(Date dateDebutEnchere) {
+		public void setDateDebutEnchere(LocalDateTime dateDebutEnchere) {
 			this.dateDebutEnchere = dateDebutEnchere;
 		}
 
 	
-		public Date getDateFinEnchere() {
+		public LocalDateTime getDateFinEnchere() {
 			return dateFinEnchere;
 		}
 
 		
-		public void setDateFinEnchere(Date dateFinEnchere) {
+		public void setDateFinEnchere(LocalDateTime dateFinEnchere) {
 			this.dateFinEnchere = dateFinEnchere;
 		}
 
 		
 		public int getMiseAprix() {
-			return MiseAprix;
+			return miseAPrix;
 		}
 
-		public void setPrixInitial(int MiseAprix) {
-			this.MiseAprix = MiseAprix;
+		public void setPrixInitial(int miseAPrix) {
+			this.miseAPrix = miseAPrix;
 		}
 
 		
@@ -141,7 +143,7 @@
 					", description='" + description + '\'' +
 					", dateDebutEnchere=" + dateDebutEnchere +
 					", dateFinEnchere=" + dateFinEnchere +
-					", prixInitial=" + prixInitial +
+					", prixInitial=" + miseAPrix +
 					", prixVente=" + prixVente +
 					", etatVente=" + etatVente +
 					'}';
